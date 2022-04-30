@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from studentnet.fife.ac.uk/~1880611/app - separatepages/calories.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Apr 2022 19:17:10 GMT -->
+<head>
+    <title>Healthy Living</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--stylesheets-->
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--Styleshets-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" href="themes/purple.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script src="script.js"></script>
+
+
+</head>
+
+<body>
+    
+    <div data-role="page" id="calories" data-theme="a" data-content-theme="a">
+
+        <div data-role="header">
+            <h1>Healthy Living App</h1>
+
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="index-2.html" rel="external" data-icon="home">Home</a></li>
+                    <li><a href="calories.html" rel="external" class="ui-btn-active ui-state-persist"data-icon="info">Calories</a></li>
+                    <li><a href="meals.html" rel="external"data-icon="calendar">Meals</a></li>
+                    <li><a href="recipies.html" rel="external" data-icon="grid">Recipies</a></li>
+                    <li><a href="exercises.html" rel="external" data-icon="heart">Exercises</a></li>
+                    <li><a href="info.html" rel="external" data-icon="phone">Info</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /header -->
+
+
+        <div data-role="content">
+            <h1><strong>Calorie Counter</strong></h1>
+            <p class="calorieblurb">Use this form to calculate your recommended daily calorie intake.</p>
+            <div class="caloriecounter">
+                <label class="female">Female:
+                    <input id="female" type="radio" name="gender" onchange="calsPerDay()"></label>
+                <label class="male">Male:
+                    <input id="male" type="radio" name="gender" onchange="calsPerDay()" checked>
+                </label>
+                <label>Age:
+                    <input id="age" type="number" oninput="calsPerDay()" value="50">
+                    years
+                </label>
+                <label>Height:
+                    <input id="height" type="number" oninput="calsPerDay()" value="70">
+                    in inches (12 inches=1 foot)
+                </label>
+                <label>Weight:
+                    <input id="weight" type="number" oninput="calsPerDay()" value="225">
+                    in pounds
+                </label>
+                <label onclick="calsPerDay()">
+                    Base metabolic rate: <span id="totalCals"></span> kcal per day
+                </label>
+
+
+            </div><!-- /content -->
+
+            <div data-role="footer" class="footer">
+                <p>&copy; 2019 Matthew Francis</p>
+            </div>
+        </div>
+    </div>
+    <!--END OF SECOND PAGE -->
+
+</body>
+
+
+<!-- Mirrored from studentnet.fife.ac.uk/~1880611/app - separatepages/calories.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Apr 2022 19:17:10 GMT -->
+</html>
